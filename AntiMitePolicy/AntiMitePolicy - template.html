@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Антиклещ/Антиклещ+ Полис</title>
+	<link rel="stylesheet" href="styles/style.css" />
+</head>
+{{{ setExampleLabel }}}
+
+<body>
+	<table>
+		<tbody>
+			<tr>
+				<td class="left-column-borderless">
+					<div class="title">«Антиклещ{{#if isPlus}}+{{/if}}»</div><br>
+					<div class="section-title">Полис добровольного медицинского страхования</div><br>
+					<div class="policy-number">{{#if isDocStateDraft}}№__________ дата выдачи{{else}}№
+						{{documentNumber}} дата выдачи {{ currentDate }}{{/if}}</div>
+				</td>
+				<td class="right-column-borderless" style="text-align: right;"><img src="images/sogazSign.png"
+						alt="SOGAZ" style="height: 55%; width: 55%;" />
+				</td>
+			</tr>
+		</tbody>
+	</table> <br>
+
+	<p class="justify">
+		Настоящий Полис заключен в соответствии со ст.435 Гражданского кодекса Российской Федерации и прилагаемыми к
+		настоящему Полису
+		«Правилами добровольного медицинского страхования граждан» АО «СОГАЗ» в редакции от «31» января 2023 г. (далее –
+		Правила{{#if isPlus}}-1{{/if}})
+		(Приложение №3 к настоящему Полису), размещенными на сайте Страховщика по адресу:
+		<a
+			href="https://www.sogaz.ru/upload/iblock/61f/gfzzmt3213aoon60h7fkwar3j48hzpfj/003_Pravila-dobrovolnogo-meditsinskogo-strakhovaniya-grazhdan-ot-31.01.2023.PDF">https://www.sogaz.ru/upload/iblock/61f/gfzzmt3213aoon60h7fkwar3j48hzpfj/003_Pravila-dobrovolnogo-meditsinskogo-strakhovaniya-grazhdan-ot-31.01.2023.PDF</a>,
+		и
+		{{#if isPlus}}
+		«Правилами страхования от несчастных случаев и заболеваний» АО «СОГАЗ» в редакции от «17» марта 2023г.,
+		«Таблицей № 4 заболеваний, диагностированных
+		в течение срока страхования» (Приложение 11 к ним) (далее – Правила 2, Приложение № 4 к настоящему Полису),
+		размещенными на сайте АО «СОГАЗ» по адресу:
+		<a
+			href="https://www.sogaz.ru/upload/iblock/4af/pyq04h8ep04nj7enp211hzqhenptxgpt/177_Pravila-strakhovaniya-ot-neschastnykh-sluchaev-i-zabolevaniy-ot-17.03.2023.pdf">https://www.sogaz.ru/upload/iblock/4af/pyq04h8ep04nj7enp211hzqhenptxgpt/177_Pravila-strakhovaniya-ot-neschastnykh-sluchaev-i-zabolevaniy-ot-17.03.2023.pdf
+		</a>
+		{{/if}}
+		Программой добровольного медицинского страхования «Антиклещ {{#if isPlus}}+{{else}}ДМС{{/if}}» {{#if (or
+		antiMiteBasic antiMitePlusBasic)}}Базовая{{else}}Расширенная{{/if}}
+		в соответствии с п. 4 настоящего Полиса в редакции от 01.08.2024 г. (далее – Программа, Приложение № 1 к
+		настоящему Полису),
+		являющимися неотъемлемыми частями настоящего Полиса.
+
+	</p>
+	<div class="text-container">
+		<div class="section-title">
+			1. Страховщик:
+		</div>
+		<div class="justify">
+			Акционерное общество «Страховое общество газовой промышленности» (АО «СОГАЗ»)
+			Лицензия СЛ №1208 от 05.08.2015 Телефон 8 800 250 29 06 ОГРН 1027739820921 ИНН 7736035485
+		</div><br>
+		<div class="section-title">
+			2. Страхователь: {{ policyHolderFullName }}<br>
+		</div>
+		<div class="justify">
+			Дата рождения: {{ policyHolderDateOfBirth }}<br>
+			Паспорт: Cерия {{ policyHolderPassportSeries }} номер: {{ policyHolderPassportNumber }} Дата выдачи: {{
+			policyHolderPassportIssueDate }}<br>
+			Кем выдан: {{ policyHolderPassportIssuer }} Код подразделения: {{ policyHolderPassportDepartmentCode }}<br>
+			Адрес регистрации: {{ policyHolderRegistrationAddress }}<br>
+			Телефон: {{ policyHolderPhone }}; E-mail: {{ policyHolderEmail }}
+		</div><br>
+		<div class="section-title">
+			3. Страховой случай
+		</div>
+		<div class="justify">
+			{{#if isPlus}}3.1. «Добровольное медицинское страхование» (далее – ДМС):{{/if}}
+			3.1{{#if isPlus}}.1{{/if}} Обращение Застрахованного лица в течение срока действия
+			страхования по настоящему Полису в медицинскую организацию из числа согласованных
+			Страховщиком для организации и оказания Застрахованному лицу медицинских услуг в форме
+			телемедицинских онлайн-консультаций, предусмотренных п. 2.1 Программы, вследствие
+			расстройства здоровья или состояния Застрахованного лица, требующих их оказания, в связи
+			с укусом клеща, наползанием клеща;<br>
+			3.{{#if isPlus}}1.{{/if}}2. Обращение Застрахованного лица в течение срока действия
+			страхования по настоящему Полису в медицинскую организацию из числа {{#if
+			isStraightSalesDepartment}}предусмотренных
+			Программой{{else}}согласованных Страховщиком{{/if}}
+			для организации и оказания Застрахованному лицу медицинских услуг, предусмотренных п. 2.2
+			Программы, вследствие расстройства здоровья или состояния Застрахованного лица, требующих
+			их оказания, в связи с укусом клеща, наползанием клеща;<br>
+			3.{{#if isPlus}}1.{{/if}}3. Возникновение в течение срока действия страхования по настоящему
+			Полису необходимости организации и оказания иных услуг, предусмотренных п. 2.3 Программы,
+			вследствие расстройства здоровья или состояния Застрахованного лица, требующих их оказания,
+			в связи с укусом клеща, наползанием клеща.<br>
+			Перечень, объем медицинской помощи и иных услуг, а также условия их получения определяются Программой.<br>
+			Общая сумма страховых выплат по всем страховым случаям, предусмотренным п. 3{{#if isPlus}}.1{{/if}}
+			настоящего Полиса, произошедшим с Застрахованным лицом в течение срока действия страхования, не может
+			превышать установленной для него индивидуальной страховой суммы.<br>
+			{{#if isPlus}}
+			3.2. «Страхование от несчастных случаев и заболеваний» (далее – НСиЗ):<br>
+			Совершившееся событие из числа указанных в настоящем пункте, явившееся следствием заболевания,
+			вызванного укусом, наползанием клеща, диагностированного у Застрахованного лица в течение срока действия
+			страхования, подтвержденное в установленном Программой порядке, с наступлением которого возникает
+			обязанность
+			Страховщика произвести страховую выплату.<br>
+			3.2.1. Смерть в результате заболевания (п. 6.4 Программы);<br>
+			3.2.2. Постоянная утрата трудоспособности (инвалидность) в результате заболевания (п. 6.3 Программы);<br>
+			3.2.3. Временная утрата трудоспособности в результате заболевания / Временное расстройство здоровья в
+			результате заболевания (п. 6.1, п. 6.2 Программы).<br>
+			Общая сумма страховых выплат по всем страховым случаям, предусмотренным п. 3.2 настоящего Полиса,
+			произошедшим с
+			Застрахованным лицом в течение срока действия страхования, не может превышать установленной для него
+			индивидуальной страховой суммы
+			{{/if}}
+		</div><br>
+
+		<div class="section-title">
+			4. Программа страхования
+		</div>
+		<div class="justify">
+			Программа добровольного страхования «Антиклещ {{#if (not isPlus)}}ДМС{{else}}+{{/if}}» {{#if (or
+			antiMiteBasic antiMitePlusBasic)}}Базовая{{else}}Расширенная{{/if}}<br>
+		</div><br>
+		<table style="width: 100%;">
+			<tr class="section-title">
+				<td class="left-column" colspan="2">5. Застрахованное лицо(Фамилия, имя, отчество)</td>
+				<td class="left-column" colspan="2">6. Фактический адрес проживания</td>
+				<td class="left-column" colspan="2">7. Дата рождения</td>
+				<td class="left-column" colspan="2">8. Индивидуальная страховая сумма, руб.</td>
+				<td class="left-column" colspan="2">9. Индивидуальная страховая премия, руб.</td>
+			</tr>
+			<tr>
+				<td class="left-column" colspan="2">{{ insuredObjectFullName }}</td>
+				<td class="left-column" colspan="2">{{ insuredObjectRegistrationAddress }}</td>
+				<td class="left-column" colspan="2">{{ insuredObjectDateOfBirth }}</td>
+				<td class="left-column" colspan="1" style="padding-right: 0;">8.1. ДМС <br>{{ dmsSumInsured }}</td>
+				<td class="left-column" colspan="1">{{#if isPlus}}8.2. НСиЗ <br>{{ nsizSumInsured }}{{else}}-{{/if}}
+				</td>
+				<td class="left-column" colspan="1" style="padding-right: 0;">9.1. ДМС <br>{{ dmsPremium }}</td>
+				<td class="left-column" colspan="1">{{#if isPlus}}9.2. НСиЗ <br>{{ nsizPremium }}{{else}}-{{/if}}</td>
+			</tr>
+		</table><br>
+
+		<div class="section-title">
+			10. Общая страховая сумма (руб.)
+		</div>
+		<div>
+			{{ insuredSum }} ({{ insuredSumText }})<br>
+			{{#if isPlus}}
+			10.1. Общая страховая сумма по Полису в части ДМС, руб. {{ dmsSumInsured }} ({{ dmsSumInsuredText }})<br>
+			10.2. Общая страховая сумма по Полису в части НСиЗ, руб.{{ nsizSumInsured }} ({{ nsizSumInsuredText }})<br>
+			{{/if}}
+		</div><br>
+
+		<div style="page-break-inside: avoid;">
+			<div class="section-title">
+				11. Общая страховая премия (руб.)
+			</div>
+			<div>
+				{{ insuredPremium }} ({{ insuredPremiumText }})<br>
+				{{#if isPlus}}
+				11.1. Общая страховая премия по Полису в части ДМС, руб. {{ dmsPremium }} ({{ dmsPremiumText }})<br>
+				11.2. Общая страховая премия по Полису в части НСиЗ, руб. {{ nsizPremium }} ({{ nsizPremiumText}})<br>
+				{{/if}}
+			</div><br>
+		</div>
+
+		<div class="section-title">
+			12. Порядок уплаты страховой премии
+		</div>
+		<div class="justify">
+			Единовременно, безналичным платежом или наличными денежными средствами, не позднее даты выдачи Полиса.<br>
+			Дата (момент) уплаты страховой премии определяется в соответствии с п. 3 ст. 16.1 Закона РФ от 07.02.1992 N
+			2300-1 «О защите прав потребителей». Размер и дата уплаты указываются в документе, подтверждающем уплату
+			страховой премии.<br>
+		</div><br>
+		<div class="section-title">
+			13. Срок действия полиса, срок действия страхования
+		</div>
+		<div class="justify">
+			13.1 Настоящий Полис вступает в силу с момента уплаты страховой премии и действует до окончания срока
+			действия страхования, указанного в п. 13.2 настоящего Полиса.<br>
+			13.2 Срок действия страхования: с 00 часов 00 минут 4 (четвертого) дня, следующего за днем уплаты страховой
+			премии, и действует 1 (один) год.<br>
+			13.3. В случае неуплаты страховой премии в размере и сроки, указанные в настоящем Полисе, Полис считается
+			незаключенным и в силу не вступает.<br>
+		</div><br>
+		<div class="section-title">
+			14. Территория страхования
+		</div>
+		<div class="justify">
+			Территория Российской Федерации.
+		</div><br>
+		<div class="section-title">
+			15. Приложения, являющиеся неотъемлемой частью настоящего Полиса и обязательные для сторон
+		</div>
+		<div class="justify">
+			1. Программа добровольного страхования «Антиклещ {{#if isPlus}}+{{else}}ДМС{{/if}}» {{#if (or antiMiteBasic
+			antiMitePlusBasic)}}Базовая{{else}}Расширенная{{/if}} в редакции от 01.08.2024 г. (п. 4 настоящего
+			Полиса);<br>
+			2. Памятка получателю страховых услуг.<br>
+			3. Правила добровольного медицинского страхования граждан АО «СОГАЗ» в редакции от «31» января 2023 г.<br>
+			{{#if isPlus}}4. Правила страхования от несчастных случаев и заболеваний АО «СОГАЗ» в редакции от «17» марта
+			2023г., Приложение 11 к ним «Таблица №4 заболеваний, диагностированных в течение срока
+			страхования».<br>{{/if}}
+			{{#if isNotOnePerson}}
+			{{#if isPlus}}5.{{else}}4.{{/if}}Список застрахованных лиц.
+			{{/if}}
+		</div><br>
+		<div class="page-break-auto">
+			<div class="section-title" style="padding-top: 2mm;">Представитель Страховщика: <div class="stamp">
+				</div>
+				{{{ signerFacsimile }}}
+			</div>
+			<div>
+				<p><b>Страховщик:</b></p>
+				<p style="margin: 0; margin-top: 2px;">{{ signerPosition }},</p>
+				<p style="margin: 0; margin-top: 2px;">действующий на основании доверенности №
+					{{ signerProxyNumber }} от
+					{{ signerProxyDate }}</p>
+			</div>
+			<div style="padding-left: 50%;">
+				<table style="padding-left: 50%;">
+					<tbody>
+						<tr>
+							<td class="signature"></td>
+							<td class="facsimile_signature" colspan="2">/{{ signerShortName }}/</td>
+						</tr>
+						<tr>
+							<td class="signature" style="border-top: 1px solid black;">
+								М.П.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;подпись</td>
+							<td class="signature_name" style="border-top: 1px solid black;">ФИО</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+</body>
+
+</html>

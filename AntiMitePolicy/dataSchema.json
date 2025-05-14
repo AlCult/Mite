@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DataSchema For Anti Mite Insurance Policy",
+    "description": "Schema for printing Anti Mite Insurance Policy",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {}
+}

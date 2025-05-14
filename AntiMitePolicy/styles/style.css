@@ -1,0 +1,106 @@
+@page {
+	size: A4;
+	font-family: Roboto, system-ui, sans-serif;
+	margin-left: 10mm;
+	margin-bottom: 25mm;
+	margin-right: 15mm;
+	margin-top: 5mm;
+
+	@bottom-left-corner {
+		content: url("../images/logoSogaz.png");
+		transform: scale(.5);
+		padding-left: 50px;
+		margin-bottom: 30px;
+	}
+
+	@bottom-right-corner {
+		content: url("../images/sogazContacts.png");
+		transform: scale(.5);
+		padding-right: 230px;
+		margin-bottom: 50px;
+	}
+}
+
+.left-column-borderless {
+	width: 80%;
+	border: none;
+}
+
+.signature {
+	padding-right: 25px;
+	vertical-align: bottom;
+}
+
+.signature_name {
+	vertical-align: bottom;
+}
+
+.right-column-borderless {
+	width: 20%;
+	border: none;
+	color: black;
+}
+
+.title {
+	font-size: x-large;
+	color: #00065f;
+	font-weight: bolder;
+}
+
+.section-title {
+	font-size: medium;
+	color: #00065f;
+	font-weight: bold;
+}
+
+.policy-number {
+	font-weight: bolder;
+	font-size: large;
+	color: black;
+}
+
+.left-column {
+	font-weight: bold;
+	border: 1px solid #0d2e5c;
+	padding-left: 5px;
+	padding-right: 5px;
+	vertical-align: top;
+}
+
+tr, td {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+body {
+	width: 191mm;
+	font-family: Roboto, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	margin-bottom:4%;
+	padding-bottom: 4%;
+	color: black;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.stamp {
+	min-height: 40mm; 
+	min-width: 40mm;
+	background: 0mm 0mm / 40mm no-repeat url("../../../global/PrintoutCommonResources/imgs/stampSogaz.png");
+	position: absolute;
+	left: 100mm;
+}
+
+.facsimile {
+	height: 30mm;
+	position: absolute;
+	left: 115mm;
+}
