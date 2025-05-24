@@ -1,0 +1,7 @@
+{
+    "renderingEngine": "PDFReactor",
+    "renderingEngineOptions": {
+        "pageSize": "A4"
+    },
+    "archive": false
+}

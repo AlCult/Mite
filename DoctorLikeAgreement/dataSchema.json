@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DataSchema For Doctor Like Agreement",
+    "description": "Schema for printing Doctor Like Agreement",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {}
+}

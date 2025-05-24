@@ -1,0 +1,178 @@
+@page {
+	size: A4;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 10mm;
+	margin-bottom: 10mm;
+	margin-right: 15mm;
+	margin-top: 10mm;
+}
+
+.left-column {
+	width: 16%;
+	font-weight: bold;
+}
+
+.right-column {
+	width: 16%;
+	text-align: left;
+}
+
+.right-column-center {
+	width: 84%;
+	text-indent: 0;
+	border: 3px double black;
+}
+
+.right-column-center p {
+	text-align: center;
+	text-indent: 0;
+}
+
+.left-column,
+.right-column {
+	vertical-align: top;
+	line-height: 3.4mm;
+	border-style: double;
+	border-color: black;
+	margin: 0;
+	padding: 0;
+	break-inside: avoid;
+}
+
+.inner-column {
+	border-bottom: 1px solid black;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	line-height: 4.5mm;
+	font-style: italic;
+}
+
+.person-info {
+	color: #538993;
+}
+
+.birth-date {
+	border-right: 1px solid black; 
+	width: 70%; 
+	text-align: right; 
+	padding-right: 2px;
+}
+
+.date-of-birth {
+	width: 30%; 
+	text-align: center;
+}
+
+.double-border {
+	border-right: 3px double black; 
+}
+
+.sum {
+	vertical-align: middle;
+}
+
+table {
+	font-size: 11px;
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+tr {
+	break-inside: avoid;
+}
+
+body {
+	width: 191mm;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	line-height: normal;
+}
+
+p {
+	text-align: left;
+	text-indent: 40px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+ol {
+	list-style-position: inside; 
+	padding-left: 0;
+}
+
+li {
+	margin-bottom: 10px;
+	text-indent: 27px;
+}
+
+.page-title {
+	font-weight: bold;
+	page-break-before: always;
+	font-size: 12px;
+}
+
+.page-title p {
+	margin-bottom: 5px;
+	text-indent: 0%;
+	text-align: center;
+}
+
+.page-title:first-child {
+	line-height: 4mm; 
+	font-size: 13px;
+}
+
+.policy-text {
+	font-size: 11px;
+	text-indent: 0%;
+	margin-bottom: 0;
+}
+
+.current-date {
+	text-align: right;
+	font-size: 14px;
+}
+
+.table-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.stamp {
+	background-image: url("../../../global/PrintoutCommonResources/imgs/stampSogaz.png");
+	background-repeat: no-repeat;
+	background-size: 40mm;
+	height: 40mm;
+	width: 40mm;
+}
+
+.signature_block {
+	width: 60%; 
+	font-size: 12px;
+	margin-top: 5mm;
+	min-height: 40mm;
+}
+
+.signature-info {
+	line-height: 4.5mm;
+}
+
+.signature {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	min-height: 20mm;
+}
+
+.facsimile {
+	height: 20mm;
+	width: 20mm;
+}

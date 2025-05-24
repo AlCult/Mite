@@ -1,0 +1,136 @@
+@page {
+	size: A4;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 10mm;
+	margin-bottom: 10mm;
+	margin-right: 15mm;
+	margin-top: 10mm;
+
+	@top-center {
+		position: absolute;
+		margin-bottom: 1mm;
+		margin-top: 5mm;
+		content: counter(page);
+		width: 100%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 10pt;
+		color: gray;
+	}
+}
+
+@page :first{
+	size: A4;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 10mm;
+	margin-bottom: 10mm;
+	margin-right: 15mm;
+	margin-top: 5mm;
+
+	@top-center {
+		position: absolute;
+		margin-bottom: 1mm;
+		margin-top: 5mm;
+		content: '';
+		width: 100%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 10pt;
+		color: gray;
+	}
+}
+
+.left-column {
+	width: 70%;
+	border: none;
+	vertical-align: top;
+}
+
+.left-column-normal {
+	width: 80%;
+	border: none;
+}
+
+.right-column {
+	width: 20%;
+	text-align: justify;
+	border: 1px solid black;
+	vertical-align: middle;
+}
+
+.right-column-qr {
+	width: 30%;
+}
+
+.right-column-center {
+	width: 20%;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.left-column, .right-column {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	padding: 0;
+}
+
+body {
+	width: 191mm;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	line-height: normal;
+}
+
+.text-container {
+	border: 1px solid black;
+	line-height: 3.5mm;
+	text-align: justify;
+}
+
+.inner-text {
+	margin-left: 2mm;
+	margin-right: 2mm;
+}
+
+p {
+	text-align: center;
+	border-bottom: 1px solid black;
+	margin: 0;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.qr {
+	width: 160px;
+}
+
+ol {
+	counter-reset: subsection;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  li {
+	display: block;
+  }
+  
+  li::before {
+	counter-increment: subsection;
+	content: "1." counter(subsection) ". ";
+  }
+
+  .note-block {
+	border-top: 1px solid black; 
+	padding-top: 2mm; 
+	margin-top: 10mm; 
+	page-break-after: always;
+  }

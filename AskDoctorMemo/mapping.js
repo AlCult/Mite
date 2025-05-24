@@ -1,0 +1,22 @@
+'use strict';
+
+const { setExampleLabelOverPrintoutText } = require('@config-sogaz/global-library/lib/PrintoutsHelper');
+const { enums } = require('@config-sogaz/universal-box-configuration/lib/UBCEnums');
+
+module.exports = function mapping(input) {
+    const { businessContext } = this;
+
+    const isDocStateDraft = businessContext.documentState === 'Draft';
+    const setExampleLabel = isDocStateDraft ? setExampleLabelOverPrintoutText() : '<style></style>';
+
+    const lightTitle = input.body.insuranceConditions.boxVariant.id == enums.boxVariants.askDoctorLight ? ' Лайт' : '';
+    let title = `«Спроси врача${lightTitle}»`;
+
+    return {
+        setExampleLabel,
+        title,
+        isDocStateDraft,
+        isLight: input.body.insuranceConditions.boxVariant.id === 'light'
+    };
+};
+

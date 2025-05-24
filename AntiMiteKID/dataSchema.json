@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DataSchema For Anti Mite KID",
+    "description": "Schema for printing Anti Mite KID",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {}
+}

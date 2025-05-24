@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DataSchema For Doctor Like KID",
+    "description": "Schema for printing Doctor Like KID",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {}
+}

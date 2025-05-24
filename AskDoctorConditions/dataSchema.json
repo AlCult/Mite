@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DataSchema For Ask Doctor Conditions",
+    "description": "Schema for printing Ask Doctor Conditions",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {}
+}

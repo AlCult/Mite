@@ -1,0 +1,66 @@
+@page {
+	size: A4;
+	font-family: Roboto, system-ui, sans-serif;
+	margin-left: 10mm;
+	margin-bottom: 10mm;
+	margin-right: 15mm;
+	margin-top: 20mm;
+}
+
+.left-column {
+	width: 23%;
+}
+
+.right-column {
+	width: 77%;
+	text-align: justify;
+	padding-left: 3px;
+}
+
+.left-column, .right-column {
+	vertical-align: top;
+}
+
+tr, td {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+body {
+	width: 191mm;
+	font-family: Roboto, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	margin-bottom: 4%;
+	padding-bottom: 4%;
+	color: black;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.note-block {
+	width: 53%; 
+	border-top:1px solid black; 
+	margin-bottom: 6mm;
+}
+
+div.dictionary {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    
+    -webkit-column-gap: 0.25in;
+    -moz-column-gap: 0.25in;
+    column-gap: 0.25in;
+	
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
