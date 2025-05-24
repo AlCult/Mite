@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DataSchema For Vmt Corp Insurance Policy",
+    "description": "Schema for printing Vmt Corp Insurance Policy",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {}
+}

@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DataSchema For Onko Help Program printout",
+    "description": "Schema for printing Onko Help Program",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {}
+}

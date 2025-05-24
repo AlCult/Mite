@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DataSchema For Doctor Like Insurance Policy",
+    "description": "Schema for printing Doctor Like Insurance Policy",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {}
+}

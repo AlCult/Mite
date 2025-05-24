@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DataSchema For VMT OR Memo",
+    "description": "Schema for printing VMT OR Memo",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {}
+}

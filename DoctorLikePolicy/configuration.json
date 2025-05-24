@@ -1,0 +1,8 @@
+{
+    "renderingEngine": "PDFReactor",
+    "renderingEngineOptions": {
+        "pageSize": "A4"
+    },
+    "dataSourceName": "GetPolicySignatoriesDataSource",
+    "archive": false
+}

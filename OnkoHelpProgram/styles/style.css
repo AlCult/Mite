@@ -1,0 +1,114 @@
+@page {
+	size: A4;
+	font-family: Roboto, system-ui, sans-serif;
+	margin-left: 10mm;
+	margin-bottom: 8mm;
+	margin-right: 15mm;
+	margin-top: 8mm;
+	orphans: 5;
+
+	@bottom-center {
+		position: absolute;
+		bottom: 16px !important;
+		content: counter(page);
+		width: 100%;
+		font-family: Roboto, Helvetica, sans-serif;
+		font-size: 10pt;
+		color: #00065f;
+	}
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(../fonts/Roboto-Regular.ttf) format('truetype')
+}
+
+body {
+	width: 191mm;
+	height: 297mm;
+	font-family: Roboto, system-ui, sans-serif;
+	font-size: 13px;
+	margin: 0;
+	margin-bottom:5%;
+	padding-bottom: 5%;
+	color: #000000;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.page-title {
+	width: 100%; 
+	font-weight: bold;
+	font-size: 14px;
+	text-indent: 0;
+}
+
+.program-title {
+	text-align: center;
+	font-size: 13.8px;
+	font-style: italic;
+}
+
+.section-title {
+	width: 100%; 
+	border: 1px solid black;
+	background-color: rgb(236, 235, 235);
+	font-weight: bold;
+	text-align: center;
+	font-size: 14px;
+}
+
+p {
+	padding: 0px; 
+	margin: 0px;
+	text-align: justify;
+	text-indent: 10mm;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	padding: 0;
+}
+
+.column {
+	text-align: justify;
+	border: 1px solid black;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	break-inside: avoid;
+}
+
+.column-center {
+	text-align: center;
+	border: 1px solid black;
+}
+
+.inner-column {
+	border-bottom: 1px solid black;
+}
+
+sup {
+	vertical-align: text-top;
+	font-size: 8px;
+}
+
+.break-before {
+	break-before: always;
+}
+
+.bold-title {
+	font-weight: bold;
+}
+
+div {
+	text-align: left;
+}
+
+.highlighted {
+	color: red;
+	font-weight: bold;
+}

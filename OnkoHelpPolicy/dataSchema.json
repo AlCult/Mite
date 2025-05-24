@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DataSchema For Onko Help Insurance Policy",
+    "description": "Schema for printing Onko Help Insurance Policy",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {}
+}
